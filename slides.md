@@ -22,22 +22,42 @@ Antd Form 与 formily 的开发比较 以及 原理分析
 - 数据路径
 
 ---
-layout: image-left
-image: /mvvm.svg
-class: my-cool-content-on-the-right
----
+
+
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
 # MVVM
 Model View ViewModel
 
-<!-- <div class="p-3">
-  <Tweet id="20" />
-</div> -->
-
 ![MVVM](/mvvm.svg)
+
+</div>
+<div>
+
+# 介绍
+
+- model:  业务建模, 处理业务逻辑
+- view: 处理视图逻辑
+- viewModel: 
+
+<br/>
+
+## 目的
+
+- 数据驱动
+
+
+
+</div>
+</div>
 
 ---
 
 # Antd Form
+
+构建在 Context 基础上的 Form 方案 
 
 model 层
 
