@@ -8,7 +8,9 @@ Antd Form 与 formily 的开发比较 以及 原理分析
   </span>
 </div>
 
-## <!-- 这是一条备注 -->
+<!-- ## 这是一条备注 -->
+
+---
 
 # 什么是表单?
 
@@ -17,13 +19,14 @@ Antd Form 与 formily 的开发比较 以及 原理分析
 - 收集数据
 - 校验数据
 - 表单布局
-- 数据路径 
-
+- 数据路径
 
 ---
-
+layout: image-left
+image: /mvvm.svg
+class: my-cool-content-on-the-right
+---
 # MVVM
-
 Model View ViewModel
 
 <!-- <div class="p-3">
@@ -31,21 +34,29 @@ Model View ViewModel
 </div> -->
 
 ![MVVM](/mvvm.svg)
+
 ---
-
-# Page 4
-
-https://github.com/alibaba/formily/discussions/2432
 
 # Antd Form
 
-model 层 
-``` ts
-class Field
-
-```
+model 层
 
 ```ts
 class Form
 
 ```
+
+---
+
+# Field
+
+```ts
+class Field
+
+```
+
+---
+
+# formily
+
+https://github.com/alibaba/formily/discussions/2432
