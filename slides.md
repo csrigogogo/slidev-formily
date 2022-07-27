@@ -139,15 +139,12 @@ layout: center
 # formily 跨端开发效果演示
 
 
----
-
-
-# formily 联动体验 对比 antd form
 
 
 ---
-
-# dsdsa
+layout: center
+---
+# Formily 实际操作一波
 
 
 
@@ -155,3 +152,15 @@ layout: center
 
 (值联动的精确渲染)[https://github.com/alibaba/formily/discussions/2432]
 
+
+---
+layout: center
+---
+
+# 最后说几句
+
+<!--
+formily 只是一个表单解决方案 ， 它重新考虑了很多如今的表单方案上存在的问题， 并给出了自己的答案， 但不免也会引入许多概念使我们学习它的成本很高
+ 
+    如果你对其他的表单方案不满意，想要改变， 不妨试一试 也许会有不一样的开发体验
+-->
