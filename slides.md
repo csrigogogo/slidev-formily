@@ -1,6 +1,6 @@
 # 表单
 
-Antd Form 与 formily的 开发比较 以及 原理分析
+Antd Form 与 formily 的 开发比较 以及 原理分析
 
 <div class="absolute bottom-10">
   <span class="font-700">
@@ -45,7 +45,7 @@ Antd Form 与 formily的 开发比较 以及 原理分析
 ---
 layout: center
 --- 
- # 代码可维护性
+# 代码可维护性
 
 <!-- 
 
@@ -85,6 +85,12 @@ Model View ViewModel
 
 </div>
 </div>
+
+---
+layout: center
+---
+
+# Antd Form
 
 ---
 
@@ -136,10 +142,9 @@ layout: center
 
 ---
 
-# formily 跨端开发效果演示
+# JSON Schema
 
-
-
+简单介绍一下JSON Schema
 
 ---
 layout: center
@@ -154,13 +159,22 @@ layout: center
 
 
 ---
+
+# formily 跨端开发效果演示
+
+
+
+---
+
+ # 未来：formily Designer
+
+---
 layout: center
 ---
 
 # 最后说几句
 
 <!--
-formily 只是一个表单解决方案 ， 它重新考虑了很多如今的表单方案上存在的问题， 并给出了自己的答案， 但不免也会引入许多概念使我们学习它的成本很高
- 
-    如果你对其他的表单方案不满意，想要改变， 不妨试一试 也许会有不一样的开发体验
+formily 只是一个表单解决方案 ， 它重新考虑了很多如今的表单方案上存在的问题， 并给出了自己的答案， 但不免也会引入许多概念使我们学习它的成本很高， 至于学习它值不值， 每个心中可能有不同的答案， 他能解决你的痛点，能节约你的时间就很值
+如果你对其他的表单方案不满意，想要改变， 不妨试一试 也许会有不一样的开发体验
 -->
