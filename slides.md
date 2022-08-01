@@ -58,12 +58,22 @@ formily解决了 什么样的问题
 
 <!--
 （5分钟）重点介绍一下
+
+- 收集数据
+form 标签 会收集
+name(html 5) 或者 id(html 4) 独一无二 的原始表单控件
+
+- 校验数据
+可以看到表单控件内置了了一些校验  
+例如type: email 
+
+- 提交数据
 原始form标签 获取提交数据的方式
-
 原始form 表单的提交方式其实对应的也是 antd Form提交数据的方式
+onSubmit   和 actions
 
-onSubmit
-
+缺点： 逻辑和模版耦合
+通常来说我们要灵活一点控制数据 只能通过获取dom节点然后获取数据，进而控制数据。
 原始方法维护性差 耦合
 -->
 
@@ -122,6 +132,12 @@ mvvm 软件工程的概念
 vue 的响应式模型  在这样的思想驱动下 诞生的
  
 我们得以可以操纵数据来控制视图渲染， 而不需要直接操作dom
+
+这里跟react 的受控表单形式有差别
+
+- 受控组件并不维护自己的内部状态，外部提供 props 和回调函数，受控组件通过 props 被控制起来，更新通过 onChange 通知给父组件。
+
+- 非受控组件，则把表单数据将交由 DOM 节点来处理，通过 Ref 来操作 DOM 获取表单的值再加以操作
 -->
 
 ---
@@ -136,7 +152,7 @@ layout: center
 
 antd form如果有同学关注过源代码的话 会发现antdform
 
-只是对 rc-field-form 的封装，antd 基本只做了视图上面的变化，想看form的关键逻辑 我们得去rc-field-form
+只是对 rc-field-form 的封装，antd 基本只做了视图上面的变化，想看form的关键逻辑 我们得去rc-field-form，所以我们直奔主题
 
 https://github.com/react-component/field-form
 -->
@@ -147,15 +163,12 @@ https://github.com/react-component/field-form
 
 构建在 Context 基础上的 受控表单方案 
 
-- FormStore
-- Form 组件
-- Field 组件(Form.Item)
-- FormInstance
-
-
+- FormStore : 整个表单的核心类， 管理表单数据，生成表单实例， 控制表单校验
+- Form 组件 : 
+- Field 组件(Form.Item): 向上向FormStore注册自身， 向下传递受控属性 将表单组件变为受控组件
+- FormInstance: FormStore.getForm() 返回的结果
 
 <!--
-
 ## 为什么要阅读源代码
 
 - 更好的使用api, 了解这些 api 其背后的逻辑以及封装思想 
@@ -173,10 +186,14 @@ ThemeContext.Consumer
 
 受控组件
 
-- FormStore 
-  是一个类，存储了 Form 表单数据，并定义了各种对数据的操作-
+受控组件并不维护自己的内部状态，外部提供 props 和回调函数，受控组件通过 props 被控制起来，更新通过 onChange 通知给父组件。
 
-- Form组件 
+
+- FormStore 
+  是一个类，存储了 Form 表单数据，并定义了各种对数据的操作- 属于整个组件的核心
+
+- Form组件
+ 
 
 - Field组件
 -->
@@ -335,7 +352,7 @@ layout: center
 - 领域模型 
 - 路径系统
 - 生命周期
-- 协议驱动
+- 协议驱动  
 - 分层架构
 
 这里主要介绍一下 生命周期 , 以及协议驱动的领域问题
